@@ -1,3 +1,5 @@
+// App.js
+
 import React, { useState } from 'react';
 import './App.css';
 import Box from './components/Box';
@@ -10,10 +12,10 @@ function App() {
   const handleClick = (button) => {
     if (button === 'left') {
       setLeftClicked(true);
-      setTimeout(() => setLeftClicked(false), 300); // Reset animation after 300ms
+      setTimeout(() => setLeftClicked(false), 300);
     } else if (button === 'right') {
       setRightClicked(true);
-      setTimeout(() => setRightClicked(false), 300); // Reset animation after 300ms
+      setTimeout(() => setRightClicked(false), 300); 
     }
   };
 

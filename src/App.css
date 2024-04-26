@@ -111,4 +111,22 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-  
+
+.scroll1, .scroll2 {
+    width: 100px; 
+    height: 80%; 
+    background-color: #000000; 
+    border: 0.5px solid #fafefc; 
+    border-top: 3.5px solid #fafefc;  
+    border-radius: 50px;
+    position: absolute;
+    top: 9%; 
+}
+
+.scroll1 {
+    left: 100px; 
+}
+
+.scroll2 {
+    right: 100px; 
+}
