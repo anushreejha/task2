@@ -8,11 +8,21 @@ body {
     height: 100vh;
 }
 
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
 .page {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative; 
+    position: relative;
+    animation: fadeIn 0.5s ease;
 }
 
 .box {
@@ -155,24 +165,11 @@ body {
 }
 
 .scroll-handle-1 {
-    left: 45%;
+    left: 46%;
 }
 
 .scroll-handle-2 {
-    left: 55%;
-}
-
-.scroll-handle-circle {
-    width: 20px;
-    height: 20px;
-    background-color: #ffffff;
-    border: 1px solid #000000; 
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
+    left: 54%;
 }
 
 .scroll-handle-3 {
@@ -194,4 +191,9 @@ body {
     bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.glow-effect {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7); 
+    transition: box-shadow 0.5s ease;
 }
