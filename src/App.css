@@ -112,21 +112,86 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.scroll1, .scroll2 {
-    width: 100px; 
-    height: 80%; 
-    background-color: #000000; 
-    border: 0.5px solid #fafefc; 
-    border-top: 3.5px solid #fafefc;  
+.scroll1,
+.scroll2 {
+    width: 100px;
+    height: 80%;
+    background-color: #000000;
+    border: 0.5px solid #fafefc;
+    border-top: 3.5px solid #fafefc;
     border-radius: 50px;
     position: absolute;
-    top: 9%; 
+    top: 9%;
 }
 
 .scroll1 {
-    left: 100px; 
+    left: 100px;
 }
 
 .scroll2 {
-    right: 100px; 
+    right: 100px;
+}
+
+.scroll1 img,
+.scroll2 img {
+    display: block;
+    width: 70%;
+    height: 15%;
+    border: 2px solid #ffffff;
+    border-radius: 100px;
+    margin: 15px auto 280px; 
+}
+
+.scroll-handle-1,
+.scroll-handle-2 {
+    width: 3px;
+    height: 220px;
+    background-color: #000000; 
+    border: 0.5px solid #fafefc; 
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scroll-handle-1 {
+    left: 45%;
+}
+
+.scroll-handle-2 {
+    left: 55%;
+}
+
+.scroll-handle-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border: 1px solid #000000; 
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.scroll-handle-3 {
+    width: 5px;
+    height: 220px;
+    background-image: repeating-linear-gradient(to bottom, #fafefc, #fafefc 0.01px, transparent 1px, transparent 4px);
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lights-text {
+    color: #fafefc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
 }
